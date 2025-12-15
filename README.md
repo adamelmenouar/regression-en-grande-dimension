@@ -77,12 +77,35 @@ L’objectif principal est de :
 
 regression-en-grande-dimension/
 │
-├── detection de fraude.ipynb # Notebook principal (pipeline complet)
-├── README.md
-├── requirements.txt
+├── data/  Dataset (à ajouter localement)
+│   └── insurance_claims.csv
 │
-└── data/
-└── insurance_claims.csv # Dataset (à ajouter localement)
+├── notebooks/  Analyses et modèles
+│   ├── 01_data_cleaning_eda.ipynb
+│   ├── 02_preprocessing_smote.ipynb
+│   ├── 03_modeling_evaluation.ipynb
+│   └── 04_shap_interpretability.ipynb
+│
+├── src/  Scripts Python réutilisables (optionnel mais propre)
+│   ├── preprocessing.py
+│   ├── models.py
+│   ├── evaluation.py
+│   └── shap_utils.py
+│
+├── figures/  Graphiques générés (EDA, ROC, confusion, SHAP, etc.)
+│   ├── target_distribution.png
+│   ├── correlation_heatmap.png
+│   ├── roc_curves_all_models.png
+│   ├── confusion_matrix_rf.png
+│   ├── shap_summary_bar.png
+│   └── shap_beeswarm.png
+│
+├── report/  Rapport et livrables PDF
+│   └── Project_Report_FraudDetection.pdf
+│
+├── requirements.txt  Librairies nécessaires
+└── README.md  Description du projet
+
 
 ---
 
